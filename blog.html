@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/288dc013f9.js" crossorigin="anonymous"></script>
+
     <style>
         body{
             font-family: 'lexend';
@@ -27,7 +30,7 @@
         <nav>
             <div class="main-bg navbar bg-base-100  flex flex-row justify-around items-center  " >
                 <div class="">
-                  <button class="btn py-3 px-8 font-bold text-black" style="background-color: rgb(180, 244, 97);">Blog</button>
+                  <button class="btn py-3 px-8 font-bold text-black" style="background-color: rgb(180, 244, 97);"><a href="index.html">Home</a></button>
                 </div>
                 <div class="">
                   <a class="flex flex-row justify-center items-center text-black"><img class="mr-2 w-7 border border-dashed border-gray-400" src="images/logo.svg" alt=""> Donate Bangladesh</a>
@@ -38,14 +41,43 @@
                 </div>
             </div>
 
-            <div class="mt-[70px] flex justify-center items-center ">
-                <button class="btn text-black" style="background-color: rgb(180, 244, 97);" >Donation</button>
-                <button class="ml-3 btn btn-outline">History</button>
-            </div>
         </nav>
     </header>
 
->
+    <!-- ques section -->
+     <section class="px-5">
+        <h1 class="mt-3 text-3xl font-bold text-black ">Important FAQ <i class="fa-solid fa-circle-question"></i></h1>
+         <div class="collapse collapse-arrow bg-base-200 mt-5  border border-gray-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the document object model(DOM)?</div>
+            <div class="collapse-content">
+              <p>The Document Object Model (DOM) is a programming interface that represents the structure of a webpage as a tree of objects, allowing JavaScript to manipulate HTML elements, styles, and content dynamically.</p>
+            </div>
+         </div>
+          <div class="collapse collapse-arrow bg-base-200  border border-gray-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p> You can select an element from the DOM using methods like document.getElementById('myId') for an ID, document.querySelector('.myClass') for a class, or document.querySelectorAll('div') for all <div> elements.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200  border border-gray-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of DOM, and why it is useful? </div>
+            <div class="collapse-content">
+              <p>Event delegation is a technique that allows a single event listener to be added to a parent element, which handles events for its child elements. This is useful for improving performance, managing dynamically added elements, and simplifying code by reducing the number of event listeners needed.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200  border border-gray-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attribute's and styles using the DOM ?</div>
+            <div class="collapse-content">
+              <p>You can manipulate an element's attributes and styles in the DOM using methods like element.setAttribute('attrName', 'value') to set an attribute, and element.style.propertyName = 'value' to change a style. For example, element.classList.add('className') adds a CSS class.</p>
+            </div>
+          </div>
+     </section>
+
+
     
 </body>
 </html>

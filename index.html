@@ -27,7 +27,7 @@
         <nav>
             <div class="main-bg navbar bg-base-100  flex flex-row justify-around items-center  " >
                 <div class="">
-                  <button class="btn py-3 px-8 font-bold text-black" style="background-color: rgb(180, 244, 97);">Blog</button>
+                  <button class="btn py-3 px-8 font-bold text-black" style="background-color: rgb(180, 244, 97);"><a href="blog.html">Blog</a></button>
                 </div>
                 <div class="">
                   <a class="flex flex-row justify-center items-center text-black"><img class="mr-2 w-7 border border-dashed border-gray-400" src="images/logo.svg" alt=""> Donate Bangladesh</a>
@@ -55,14 +55,14 @@
             <!-- text section -->
              <div class="flex flex-col gap-y-3 md:w-[49%] justify-center ">
                 <div class="bg-gray-200 w-24 rounded-lg">
-                    <h1 class="flex flex-row items-center px-1 py-2 text-sm">
-                      <img src="images/coin.png" alt="Coin Icon" class="w-5 h-5 mr-2"> 00 BDT
+                    <h1  class="flex flex-row items-center px-1 py-2 text-sm">
+                      <img src="images/coin.png" alt="Coin Icon" class="w-5 h-5 mr-2"> <span id="noakhali-donation">33 </span>
                     </h1>
                 </div>
                 <h1 class="text-2xl font-bold ">Donate for Flood at Noakhali, Bangladesh</h1>
                 <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                <input type="text" placeholder="Type here" class="input input-bordered w-full " />
-                <button class="btn text-black" style="background-color: rgb(180, 244, 97);" >Donate Now</button>
+                <input id="add-money-noakhali" type="number" placeholder="Write ammount" autocomplete="off" class="input input-bordered w-full " />
+                <button id="donation-btn" class="btn text-black" style="background-color: rgb(180, 244, 97);" >Donate Now</button>
              </div>
         </div>
 
@@ -81,7 +81,7 @@
                 </div>
                 <h1 class="text-2xl font-bold ">Donate for Flood Relief in Feni,Bangladesh</h1>
                 <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                <input type="text" placeholder="Type here" class="input input-bordered w-full " />
+                <input type="number" placeholder="Enter Ammount" class="input input-bordered w-full " />
                 <button class="btn text-black" style="background-color: rgb(180, 244, 97);" >Donate Now</button>
              </div>
         </div>
@@ -101,7 +101,7 @@
                 </div>
                 <h1 class="text-2xl font-bold ">Aid for Injured in the Quota Movement, Bangladesh</h1>
                 <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                <input type="text" placeholder="Type here" class="input input-bordered w-full " />
+                <input type="number" placeholder="Enter ammount" class="input input-bordered w-full " />
                 <button class="btn text-black" style="background-color: rgb(180, 244, 97);" >Donate Now</button>
              </div>
         </div>
@@ -121,11 +121,13 @@
                 </div>
                 <h1 class="text-2xl font-bold ">Donate for Flood at Noakhali, Bangladesh</h1>
                 <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                <input type="text" placeholder="Type here" class="input input-bordered w-full " />
+                <input type="number" placeholder="Enter ammount" class="input input-bordered w-full " />
                 <button class="btn text-black" style="background-color: rgb(180, 244, 97);" >Donate Now</button>
              </div>
         </div>
      </section>
     
 </body>
+<script src="script.js"></script>
+<script src="common.js"></script>
 </html>
