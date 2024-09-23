@@ -30,10 +30,10 @@
                   <button class="btn py-3 px-8 font-bold text-black" style="background-color: rgb(180, 244, 97);"><a href="blog.html">Blog</a></button>
                 </div>
                 <div class="">
-                  <a class="flex flex-row justify-center items-center text-black"><img class="mr-2 w-7 border border-dashed border-gray-400" src="images/logo.svg" alt=""> Donate Bangladesh</a>
+                  <a class="hidden md:flex flex-row justify-center items-center text-black"><img class="mr-2 w-7 border border-dashed border-gray-400" src="images/logo.svg" alt=""> Donate Bangladesh</a>
                 </div>
                 <div class="">
-                  <p class="  flex flex-row items-center text-gray-500"><img class="flex mr-1 border-1 border border-dashed border-gray-600 w-5" src="images/coin.png" alt=""> 5500 BDT</p>
+                  <p class="  flex flex-row items-center text-gray-500"><img class="flex mr-1 border-1 border border-dashed border-gray-600 w-5" src="images/coin.png" alt=""> <span id="totalBalance">5500</span> <span class="ml-1">BDT</span></p>
                   
                 </div>
             </div>
@@ -76,13 +76,13 @@
              <div class="flex flex-col gap-y-3 md:w-[49%] justify-center ">
                 <div class="bg-gray-200 w-24 rounded-lg">
                     <h1 class="flex flex-row items-center px-1 py-2 text-sm">
-                      <img src="images/coin.png" alt="Coin Icon" class="w-5 h-5 mr-2"> 00 BDT
+                      <img src="images/coin.png" alt="Coin Icon" class="w-5 h-5 mr-2"> <span id="feni-balance">400</span> BDT
                     </h1>
                 </div>
                 <h1 class="text-2xl font-bold ">Donate for Flood Relief in Feni,Bangladesh</h1>
                 <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                <input type="number" placeholder="Enter Ammount" class="input input-bordered w-full " />
-                <button class="btn text-black" style="background-color: rgb(180, 244, 97);" >Donate Now</button>
+                <input id="feni-donation-input" type="number" placeholder="Enter Ammount" class="input input-bordered w-full " />
+                <button id="feni-submit" class="btn text-black" style="background-color: rgb(180, 244, 97);" >Donate Now</button>
              </div>
         </div>
         
@@ -96,13 +96,13 @@
              <div class="flex flex-col gap-y-3 md:w-[49%] justify-center ">
                 <div class="bg-gray-200 w-24 rounded-lg">
                     <h1 class="flex flex-row items-center px-1 py-2 text-sm">
-                      <img src="images/coin.png" alt="Coin Icon" class="w-5 h-5 mr-2"> 00 BDT
+                      <img src="images/coin.png" alt="Coin Icon" class="w-5 h-5 mr-2"> <span id="quata-balance">300</span> BDT
                     </h1>
                 </div>
                 <h1 class="text-2xl font-bold ">Aid for Injured in the Quota Movement, Bangladesh</h1>
                 <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                <input type="number" placeholder="Enter ammount" class="input input-bordered w-full " />
-                <button class="btn text-black" style="background-color: rgb(180, 244, 97);" >Donate Now</button>
+                <input id="quata-input" type="number" placeholder="Enter ammount" class="input input-bordered w-full " />
+                <button id="quata-submit" class="btn text-black" style="background-color: rgb(180, 244, 97);" >Donate Now</button>
              </div>
         </div>
         
@@ -116,13 +116,13 @@
              <div class="flex flex-col gap-y-3 md:w-[49%] justify-center ">
                 <div class="bg-gray-200 w-24 rounded-lg">
                     <h1 class="flex flex-row items-center px-1 py-2 text-sm">
-                      <img src="images/coin.png" alt="Coin Icon" class="w-5 h-5 mr-2"> 00 BDT
+                      <img src="images/coin.png" alt="Coin Icon" class="w-5 h-5 mr-2"> <span id="gopalganj-balance">500</span> BDT
                     </h1>
                 </div>
-                <h1 class="text-2xl font-bold ">Donate for Flood at Noakhali, Bangladesh</h1>
+                <h1 class="text-2xl font-bold ">Donate for Flood at Gopalganj, Bangladesh</h1>
                 <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                <input type="number" placeholder="Enter ammount" class="input input-bordered w-full " />
-                <button class="btn text-black" style="background-color: rgb(180, 244, 97);" >Donate Now</button>
+                <input id="gopalganj-input" type="number" placeholder="Enter ammount" class="input input-bordered w-full " />
+                <button id="gopalganj-submit" class="btn text-black" style="background-color: rgb(180, 244, 97);" >Donate Now</button>
              </div>
         </div>
      </section>

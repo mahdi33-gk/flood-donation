@@ -1,11 +1,11 @@
-function getElementByText(){
-    const textValue = document.getElementById(id).textContent
+function getElementByText(id){
+    const textValue = document.getElementById(id).innerText 
     const textValues = parseFloat(textValue)
     return textValues
 
 }
 
-function getElementsByInput(){
+function getElementsByInput(id){
     const inputValue = document.getElementById(id).value 
     const inputValues = parseFloat(inputValue)
     return inputValues
