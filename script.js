@@ -7,5 +7,5 @@ document.getElementById('donation-btn').addEventListener('click' , function(){
     
     const originalBanlance = mainBalanceN + newdonate
 
-    document.getElementById('noakhali-donation').innerText = originalBanlance + " BDT"
+    document.getElementById('noakhali-donation').innerText = originalBanlance + ""
 })
