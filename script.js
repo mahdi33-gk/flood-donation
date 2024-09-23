@@ -1,13 +1,16 @@
 document.getElementById('donation-btn').addEventListener('click' , function(){
 
-    const donate = document.getElementById('add-money-noakhali').value;
-    const mainbalanceN = document.getElementById('noakhali-donation').innerText
-    const mainBalanceN = parseFloat(mainbalanceN) ;
-    const newdonate = parseFloat(donate)
+    const donate = getElementsByInput('add-money-noakhali')
+    const mainbalanceN = getElementByText('noakhali-donation')
+    const Balance = getElementByText('totalBalance')
     
-    const originalBanlance = mainBalanceN + newdonate
+    if(donate > 0 && Balance > 0){
+        const originalBanlance = mainbalanceN + donate
+        document.getElementById('noakhali-donation').innerText = originalBanlance
 
-    document.getElementById('noakhali-donation').innerText = originalBanlance + ""
+        const newBalances = Balance - donate
+        document.getElementById('totalBalance').innerText = newBalances
+    } 
 })
 
 // Main ammount
@@ -19,10 +22,18 @@ document.getElementById('donation-btn').addEventListener('click' , function(){
 document.getElementById('feni-submit').addEventListener('click' , function(){
     const fenidonate = getElementsByInput('feni-donation-input')
     const fenibalance = getElementByText('feni-balance')
+    const Balance = getElementByText('totalBalance')
 
-    const newfeni = fenibalance + fenidonate
+    if(fenidonate > 0 && Balance > 0 ){
+        const newfeni = fenibalance + fenidonate
 
-    document.getElementById('feni-balance').innerText = newfeni
+        document.getElementById('feni-balance').innerText = newfeni
+        const nrwBalance = Balance - fenidonate
+        document.getElementById('totalBalance').innerText = nrwBalance
+    }
+    else{
+        alert('Are you drunk buddy?')
+    }
 })
 
 // quata movement
