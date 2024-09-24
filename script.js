@@ -35,6 +35,7 @@ document.getElementById('feni-submit').addEventListener('click' , function(){
         document.getElementById('feni-balance').innerText = newfeni
         const nrwBalance = Balance - fenidonate
         document.getElementById('totalBalance').innerText = nrwBalance
+        document.getElementById('my_modal_2').showModal();
     }
     else{
         alert('Are you drunk buddy?')
@@ -53,6 +54,7 @@ document.getElementById('quata-submit').addEventListener('click' , function(){
         document.getElementById('quata-balance').innerText = newQuata
         const nrwBalance = Balance - quatavata
         document.getElementById('totalBalance').innerText = nrwBalance
+        document.getElementById('my_modal_3').showModal();
     }
     else{
         alert('something is not right!')
@@ -73,6 +75,17 @@ document.getElementById('gopalganj-submit').addEventListener('click', function()
         
         const nrwBalance = Balance -gopaldonate
         document.getElementById('totalBalance').innerText = nrwBalance
+        document.getElementById('my_modal_5').showModal()
+
+
+        const historytab = document.createElement('div')
+        historytab.className ='bg-white p-3 rounded-md ';
+
+        historytab.innerHTML = `
+           <p class="text-xl">${new Date().toLocaleDateString()}</p>
+        `;
+        const historycontainer = document.getElementById('history-section')
+        historycontainer.insertBefore(historytab, historycontainer.firstChild)
     }
     else{
         alert('Something is not right!')
@@ -81,7 +94,13 @@ document.getElementById('gopalganj-submit').addEventListener('click', function()
 
 // history tab functionality
 const historyTab = document.getElementById('history-tab')
+const donationTab = document.getElementById('donation-tab')
 historyTab.addEventListener('click', function(){
 
-    historyTab.classList.add('')
+    historyTab.classList.add('bg-primaryr', 'text-black' ,)
+    donationTab.classList.remove('bg-primaryr')
+
+    document.getElementById('cards').classList.add('hidden')
+    document.getElementById('history-section').classList.add('hidden')
+    document.getElementById('history-section').classList.remove('hidden')
 })
