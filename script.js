@@ -9,8 +9,13 @@ document.getElementById('donation-btn').addEventListener('click' , function(){
         document.getElementById('noakhali-donation').innerText = originalBanlance
 
         const newBalances = Balance - donate
-        document.getElementById('totalBalance').innerText = newBalances
+        document.getElementById('totalBalance').innerText = newBalances;
+        document.getElementById('my_modal_1').showModal();
     } 
+    else{
+        alert('Wrong input')
+    }
+    
 })
 
 // Main ammount
@@ -71,5 +76,12 @@ document.getElementById('gopalganj-submit').addEventListener('click', function()
     }
     else{
         alert('Something is not right!')
-    }
+    } 
+})
+
+// history tab functionality
+const historyTab = document.getElementById('history-tab')
+historyTab.addEventListener('click', function(){
+
+    historyTab.classList.add('')
 })

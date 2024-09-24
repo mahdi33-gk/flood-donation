@@ -21,13 +21,27 @@
             height: 97px;
         }
     </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'primaryr': 'rgb(180, 244, 97)'
+              }
+            }
+          }
+        }
+    </script>
+
+
 </head>
 <body>
     <header class=" fixed top-0 left-0 w-full z-50 bg-blur backdrop-blur-lg shadow-lg  ">
         <nav>
             <div class="main-bg navbar bg-base-100  flex flex-row justify-around items-center  " >
                 <div class="">
-                  <button class="btn py-3 px-8 font-bold text-black" style="background-color: rgb(180, 244, 97);"><a href="blog.html">Blog</a></button>
+                  <button class="btn py-3 px-8 font-bold bg-primaryr text-black" ><a href="blog.html">Blog</a></button>
                 </div>
                 <div class="">
                   <a class="hidden md:flex flex-row justify-center items-center text-black"><img class="mr-2 w-7 border border-dashed border-gray-400" src="images/logo.svg" alt=""> Donate Bangladesh</a>
@@ -40,7 +54,7 @@
 
             <div class="mt-[70px] flex justify-center items-center mb-2">
                 <button class="btn text-black" style="background-color: rgb(180, 244, 97);" >Donation</button>
-                <button class="ml-3 btn btn-outline">History</button>
+                <button id="history-tab" class="ml-3 btn btn-outline">History</button>
             </div>
         </nav>
     </header>
@@ -63,6 +77,21 @@
                 <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                 <input id="add-money-noakhali" type="number" placeholder="Write ammount" autocomplete="off" class="input input-bordered w-full " />
                 <button id="donation-btn" class="btn text-black" style="background-color: rgb(180, 244, 97);" >Donate Now</button>
+                <!-- Open the modal using ID.showModal() method -->
+                 <dialog id="my_modal_1" class="modal">
+                   <div class="modal-box flex flex-col justify-center items-center">
+                     <h3 class="text-center font-bold text-2xl">Congrates!</h3>
+                     <img class="flex items-center justify-center" src="images/coin.png" alt="">
+                     <p class="text-center py-4">You have donated for humankind! </p>
+                     <h3 class="font-bold text-black text-center">Successfully</h3>
+                     <div class="modal-action">
+                       <form method="dialog">
+                         <!-- if there is a button in form, it will close the modal -->
+                         <button class="flex justify-center items-center btn">Close confirmation</button>
+                       </form>
+                     </div>
+                   </div>
+                 </dialog>
              </div>
         </div>
 
@@ -107,7 +136,28 @@
         </div>
         
         <!-- card4 -->
-        <div class="flex flex-col md:flex-row gap-10 shadow-2xl px-5 py-5 rounded-sm mt-5 border border-gray-300">
+        <div class="flex flex-col md:flex-row gap-10 shadow-2xl px-5 py-5 rounded-sm mt-5 border border-gray-300 mb-10">
+            <!-- image section -->
+            <div>
+                <img src="images/noakhali.png" alt="">
+            </div>
+            <!-- text section -->
+             <div class="flex flex-col gap-y-3 md:w-[49%] justify-center ">
+                <div class="bg-gray-200 w-24 rounded-lg">
+                    <h1 class="flex flex-row items-center px-1 py-2 text-sm">
+                      <img src="images/coin.png" alt="Coin Icon" class="w-5 h-5 mr-2"> <span id="gopalganj-balance">500</span> BDT
+                    </h1>
+                </div>
+                <h1 class="text-2xl font-bold ">Donate for Flood at Gopalganj, Bangladesh</h1>
+                <p> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                <input id="gopalganj-input" type="number" placeholder="Enter ammount" class="input input-bordered w-full " />
+                <button id="gopalganj-submit" class="btn text-black" style="background-color: rgb(180, 244, 97);" >Donate Now</button>
+             </div>
+        </div>
+
+
+
+        <div class="flex flex-col md:flex-row gap-10 shadow-2xl px-5 py-5 rounded-sm mt-5 border border-gray-300 mb-10">
             <!-- image section -->
             <div>
                 <img src="images/noakhali.png" alt="">
@@ -126,6 +176,7 @@
              </div>
         </div>
      </section>
+     
     
 </body>
 <script src="script.js"></script>
